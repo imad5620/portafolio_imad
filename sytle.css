@@ -6,13 +6,24 @@
     box-sizing: border-box;
 }
 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(240, 199, 103);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif
 }
 
 .wrapper {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
+    background-color:rgb(244, 222, 170);
    
 }
 
@@ -32,6 +43,7 @@ body{
     justify-content: space-around;
 }
 
+
 .inicio li {
     list-style: none;
 }
@@ -39,8 +51,18 @@ body{
 .inicio a {
     color: #191919;
     text-decoration: none;
+    
 
 }
+
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color:crimson;
+    margin-top: 10px;
+    margin-bottom: 3em;
+}
+
 main{
     margin: 0 auto;
     width: 80vw;
@@ -55,15 +77,9 @@ h1{
 }
 
 span{
-    color:blue
+    color:rgb(205, 13, 13)
 }
 
-.main img {
-    width: 350px;
-    border: 10px solid moccasin;
-    height: 520px;
-
-}
 
 .about {
     display: grid;
@@ -86,6 +102,60 @@ span{
     font-size: 2em;
 }
 
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color:crimson;
+    margin-top: 10px;
+    margin-bottom: 3em;
+}
+
 .about p {
     margin-bottom: 1em;
+}
+
+.actualidad {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    width: 100vw;
+    align-items: center;
+    background-color: rgb(244, 222, 170);
+}
+
+.actualidad img{
+    width: 100%;
+    grid-column: 1/5;
+}
+
+.actualidad-info {
+    grid-column: 5/10;
+    padding: 2em;
+}
+
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color:crimson;
+    margin-top: 10px;
+    margin-bottom: 3em;
+}
+
+.actualidad-info h2 {
+    font-size: 2em;
+    color:#191919
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    
+
+}
+
+.footer-content h2{
+    font-size: 1.5em;
 }
